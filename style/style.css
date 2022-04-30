@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
 /*import fonts*/
 :root {
     --vermelho: #E50914;
@@ -14,8 +15,8 @@
 /*elementos base*/
 
 body {
-    background:black;
-    font-family:Arial, Helvetica, sans-serif;
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
@@ -45,40 +46,60 @@ header .logo {
 header nav a {
     text-decoration: none;
     color: #AAA;
-    margin-right: 10px;
+    margin: 0px 5px;
+    transition: all 0.5s;
+    font-weight: bold;
+    text-align: center;
 }
 
-header nav a:hover {
-    color: #fff;
+/*barra de navegação*/
+header nav .item .barra {
+    background: #DB0505;
+    color: transparent;
+    font-size: 0px;
+    height: 2px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 5px;
+    transition: all 0.5s;
+    width: 0;
+}
+
+header nav .item:hover .barra {
+    width: 100%;
+}
+
+header nav .item:hover a {
+    color: white;
 }
 
 /*filme principal*/
 .filme-principal {
     font-size: 16px;
-    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%), url('../img/capa.jpg');
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%), url(../img/capa.jpg);
+    height: 450px;
 
-    height: 400px;
-    background-size:cover;
-
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    background-position: center;
 }
 
-.filme-principal .descricao{
+.filme-principal .descricao {
     margin-top: 10px;
     margin-bottom: 40px;
 }
 
-.titulo{
+.titulo {
     margin-top: 15%;
     font-size: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.botao{
-    background-color:#BD00114A;
+.botao {
+    background-color: #BD00114A;
     border: none;
     color: white;
 
@@ -89,36 +110,91 @@ header nav a:hover {
     border-radius: 15px;
 
     cursor: pointer;
-    transition: .3s ease all;
+    transition: .5s ease all;
 }
 
-.botao:hover{
+.botao:hover {
     background-color: white;
-    color:black;
+    color: black;
 }
 
-.botao i{
+.botao i {
     margin-right: 8px;
 }
 
-.container{
+.container {
     margin-left: 30px;
 }
 
-.filme-principal .container{
+.filme-principal .container {
     width: 70%;
 }
 
-.box-filme{
+.box-filme {
     height: 100%;
     width: 100%;
     display: block;
 }
 
-.carrossel-filmes{
+.carrossel-filmes {
     margin: 0px 0px 10px 0px;
 }
 
-.filme-principal{
+.filme-principal {
     padding-bottom: 50px;
+}
+
+.owl-stage-outer .item {
+    display: flex;
+}
+
+.owl-stage-outer .item:hover .player {
+    opacity: 1;
+    visibility: visible;
+}
+
+.owl-stage-outer .item .player {
+    background: #000000ad;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+    border-radius: 15px;
+
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.owl-stage-outer .item .player i {
+    font-size: 8em;
+    color: white;
+    transition: all .3s;
+}
+
+.owl-stage-outer .item .player i:hover {
+    margin-left: 4px;
+    font-size: 8.5em;
+}
+
+.owl-stage-outer .item .player .title-player {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.owl-stage-outer .item .player .title-player b {
+    font-size: 15px;
+    margin-top: 2px;
+    color: #dadada;
 }

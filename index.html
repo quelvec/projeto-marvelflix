@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> MARVELFLIX </title>
-    <link rel="shortcut icon" href="./img/favicon.ico"/>
     <link rel="stylesheet" href="style/style.css">
 
     <!--owl css-->
@@ -17,7 +16,7 @@
     <link rel="stylesheet" href="style/responsive.css">
 
     <!--favicon-->
-    
+    <link rel="shortcut icon" href="./img/favicon.ico" />
 
 </head>
 
@@ -26,10 +25,22 @@
         <div class="container">
             <h2 class="logo"> MARVELFLIX </h2>
             <nav class="nav">
-                <a href="#"> Home </a>
-                <a href="#"> Filmes </a>
-                <a href="#"> Séries </a>
-                <a href="#"> Em breve </a>
+                <div class="item home">
+                    <a href="#"> Home </a>
+                    <div class="barra">.</div>
+                </div>
+                <div class="item filmes">
+                    <a href="#"> Filmes </a>
+                    <div class="barra">.</div>
+                </div>
+                <div class="item series">
+                    <a href="#"> Séries </a>
+                    <div class="barra">.</div>
+                </div>
+                <div class="item embreve">
+                    <a href="#"> Em breve </a>
+                    <div class="barra">.</div>
+                </div>
             </nav>
         </div>
     </header>
@@ -59,69 +70,157 @@
         <div class="owl-carousel owl-theme">
             <!--miniatura1-->
             <div class="item">
-                <a href="https://www.youtube.com/watch?v=p__jH6NkowU&ab_channel=MarvelBrasil" target="_blank">
-                    <img class="box-filme" src="./img/mini1.jpg" alt="miniatura filme 1">
-                </a>
+                <img class="box-filme" src="./img/mini1.jpg" alt="miniatura filme 1">
+
+                <div class="player">
+                    <p class="title-player">
+                        Wanda Vision
+                        <b> Assista ao trailer! </b>
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=p__jH6NkowU&ab_channel=MarvelBrasil" target="_blank">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </a>
+                </div>
             </div>
             <!--miniatura2-->
             <div class="item">
-                <a href="https://www.youtube.com/watch?v=ZHaokMTWgdY&ab_channel=MarvelBrasil" target="_blank">
-                    <img class="box-filme" src="./img/mini2.jpg" alt="miniatura filme 2">
-                </a>
+                <img class="box-filme" src="./img/mini2.jpg" alt="miniatura filme 2">
+
+                <div class="player">
+                    <p class="title-player">
+                        Falcão e Soldado Invernal
+                        <b> Assista ao trailer! </b>
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=ZHaokMTWgdY&ab_channel=MarvelBrasil" target="_blank">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </a>
+                </div>
             </div>
             <!--miniatura3-->
             <div class="item">
-                <a href="https://www.youtube.com/watch?v=xdBWrkcmMwU&ab_channel=MarvelBrasil" target="_blank">
-                    <img class="box-filme" src="./img/mini3.jpg" alt="miniatura filme 3">
-                </a>
+                <img class="box-filme" src="./img/mini3.jpg" alt="miniatura filme 3">
+
+                <div class="player">
+                    <p class="title-player">
+                        Loki
+                        <b> Assista ao trailer! </b>
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=xdBWrkcmMwU&ab_channel=MarvelBrasil" target="_blank">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </a>
+                </div>
             </div>
             <!--miniatura4-->
             <div class="item">
-                <a href="https://www.youtube.com/watch?v=uNAxHLp7wv8&ab_channel=MarvelBrasil" target="_blank">
-                    <img class="box-filme" src="./img/mini4.jpg" alt="miniatura filme 4">
-                </a>
+                <img class="box-filme" src="./img/mini4.jpg" alt="miniatura filme 4">
+
+                <div class="player">
+                    <p class="title-player">
+                        Viúva Negra
+                        <b> Assista ao trailer! </b>
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=uNAxHLp7wv8&ab_channel=MarvelBrasil" target="_blank">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </a>
+                </div>
             </div>
             <!--miniatura5-->
             <div class="item">
-                <a href="https://www.youtube.com/watch?v=zq-dKITdTsE&ab_channel=MarvelBrasil" target="_blank">
-                    <img class="box-filme" src="./img/mini5.jpg" alt="miniatura filme 5">
-                </a>
+                <img class="box-filme" src="./img/mini5.jpg" alt="miniatura filme 5">
+
+                <div class="player">
+                    <p class="title-player">
+                        What If...?
+                        <b> Assista ao trailer! </b>
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=zq-dKITdTsE&ab_channel=MarvelBrasil" target="_blank">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </a>
+                </div>
             </div>
             <!--miniatura6-->
             <div class="item">
-                <a href="https://www.youtube.com/watch?v=AfHiUtxrmiY&ab_channel=MarvelBrasil" target="_blank">
-                    <img class="box-filme" src="./img/mini6.jpg" alt="miniatura filme 6">
-                </a>
+                <img class="box-filme" src="./img/mini6.jpg" alt="miniatura filme 6">
+
+                <div class="player">
+                    <p class="title-player">
+                        Shang-Chi
+                        <b> Assista ao trailer! </b>
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=AfHiUtxrmiY&ab_channel=MarvelBrasil" target="_blank">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </a>
+                </div>
             </div>
             <!--miniatura7-->
             <div class="item">
-                <a href="https://www.youtube.com/watch?v=PJza3ZaFeAU&t=1s&ab_channel=MarvelBrasil" target="_blank">
-                    <img class="box-filme" src="./img/mini7.jpg" alt="miniatura filme 7">
-                </a>
+                <img class="box-filme" src="./img/mini7.jpg" alt="miniatura filme 7">
+
+                <div class="player">
+                    <p class="title-player">
+                        Eternos
+                        <b> Assista ao trailer! </b>
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=PJza3ZaFeAU&t=1s&ab_channel=MarvelBrasil" target="_blank">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </a>
+                </div>
             </div>
             <!--miniatura8-->
             <div class="item">
-                <a href="https://www.youtube.com/watch?v=C-Wi9qu--0k&ab_channel=MarvelBrasil" target="_blank">
-                    <img class="box-filme" src="./img/mini8.jpg" alt="miniatura filme 8">
-                </a>
+                <img class="box-filme" src="./img/mini8.jpg" alt="miniatura filme 8">
+
+                <div class="player">
+                    <p class="title-player">
+                        Gavião Arqueiro
+                        <b> Assista ao trailer! </b>
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=C-Wi9qu--0k&ab_channel=MarvelBrasil" target="_blank">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </a>
+                </div>
             </div>
             <!--miniatura9-->
             <div class="item">
-                <a href="https://www.youtube.com/watch?v=CyiiEJRZjSU&ab_channel=SonyPicturesBrasil" target="_blank">
-                    <img class="box-filme" src="./img/mini9.jpg" alt="miniatura filme 9">
-                </a>
+                <img class="box-filme" src="./img/mini9.jpg" alt="miniatura filme 9">
+
+                <div class="player">
+                    <p class="title-player">
+                        Homem Aranha: No way home
+                        <b> Assista ao trailer! </b>
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=CyiiEJRZjSU&ab_channel=SonyPicturesBrasil" target="_blank">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </a>
+                </div>
             </div>
             <!--miniatura10-->
             <div class="item">
-                <a href="https://www.youtube.com/watch?v=DFa0evfX96s&ab_channel=MarvelBrasil" target="_blank">
-                    <img class="box-filme" src="./img/mini10.jpg" alt="miniatura filme 10">
-                </a>
+                <img class="box-filme" src="./img/mini10.jpg" alt="miniatura filme 10">
+
+                <div class="player">
+                    <p class="title-player">
+                        Cavaleiro da lua
+                        <b> Assista ao trailer! </b>
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=DFa0evfX96s&ab_channel=MarvelBrasil" target="_blank">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </a>
+                </div>
             </div>
             <!--miniatura11-->
             <div class="item">
-                <a href="https://www.youtube.com/watch?v=X23XCFgdh2M&ab_channel=MarvelBrasil" target="_blank">
-                    <img class="box-filme" src="./img/mini11.jpg" alt="miniatura filme 11">
-                </a>
+                <img class="box-filme" src="./img/mini11.jpg" alt="miniatura filme 11">
+
+                <div class="player">
+                    <p class="title-player">
+                        Doutor estranho no multiverso da loucura
+                        <b> Assista ao trailer! </b>
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=X23XCFgdh2M&ab_channel=MarvelBrasil" target="_blank">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

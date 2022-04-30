@@ -77,7 +77,6 @@ header nav .item:hover a {
 .filme-principal {
     font-size: 16px;
     background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%), url(../img/capa.jpg);
-    height: 450px;
 
     background-size: cover;
     display: flex;
@@ -104,7 +103,6 @@ header nav .item:hover a {
     color: white;
 
     padding: 15px 30px;
-    margin-right: 15px;
     margin-bottom: 10px;
     font-size: 12px;
     border-radius: 15px;
@@ -122,12 +120,12 @@ header nav .item:hover a {
     margin-right: 8px;
 }
 
-.container {
-    margin-left: 30px;
+.carrossel-filmes .title-carrossel {
+    margin-bottom: 15px;
 }
 
-.filme-principal .container {
-    width: 70%;
+.container {
+    margin: 0 30px;
 }
 
 .box-filme {
@@ -138,6 +136,7 @@ header nav .item:hover a {
 
 .carrossel-filmes {
     margin: 0px 0px 10px 0px;
+    padding: 0px 20px;
 }
 
 .filme-principal {
